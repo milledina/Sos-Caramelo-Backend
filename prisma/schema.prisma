@@ -20,3 +20,15 @@ model usuarios {
   updatedAt DateTime @updatedAt
 }
 
+model animais {
+  id Int @id @default(autoincrement())
+  nome String 
+  tipo String
+  idade String
+  descricao String
+  localizacao String
+  status String
+  createdAt DateTime @default(now())
+  updateAt DateTime @updatedAt
+
+}
