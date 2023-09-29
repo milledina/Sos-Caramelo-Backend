@@ -32,3 +32,12 @@ model animais {
   updateAt DateTime @updatedAt
 
 }
+
+model chamados {
+  id Int @id @default(autoincrement())
+  id_solicitacao String
+  tipo_solicitacao String 
+  descricao_solicitacao String
+  imagem_soliciticao String
+  createdAt DateTime @default(now())
+  updateAt DateTime @updatedAt
